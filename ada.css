@@ -1,0 +1,266 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: "openSans"; /*a name to be used later*/
+  src: url("Fonts/OpenSans-Light.ttf"); /*URL to font*/
+}
+@font-face {
+  font-family: "helvetica"; /*a name to be used later*/
+  src: url("Fonts/Helvetica.ttf"); /*URL to font*/
+}
+@font-face {
+  font-family: "helveticaLight"; /*a name to be used later*/
+  src: url("Fonts/HelveticaLight.ttf"); /*URL to font*/
+}
+html {
+  margin: 0px;
+  height: 100%;
+}
+body {
+  font-family: "helvetica";
+  margin: 0;
+  height: 100%;
+  background: linear-gradient(to top right, #131313, #3b3b3b);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  text-shadow: -4px 4px 5px rgba(0, 0, 0, 0.712);
+}
+h1 {
+  font-size: 3em;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0.3em;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+h2 {
+  font-size: 40px;
+  margin: 10px 10px;
+}
+ul {
+  margin: 5px;
+}
+li {
+  font-size: 1.5em;
+  padding: 2px;
+  margin: 5px;
+}
+.box {
+  width: 400px;
+  height: 400px;
+  margin: 5px auto;
+  background-color: rgb(246, 246, 246);
+  border: 2px solid rgb(246, 246, 246);
+}
+.row {
+  height: 100px;
+  display: flex;
+  border: 0px solid rgb(245, 245, 245);
+}
+.col {
+  width: 25%;
+  font-family: "openSans";
+  font-weight: bold;
+  flex-grow: 1;
+  flex-shrink: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #f6f6f6;
+  font-size: 3em;
+  /* font-family: 'helvetica'; */
+  /* font-weight: bold; */
+  background: linear-gradient(to top right, #1d1d1d, #2b2b2b);
+  border-radius: 10px;
+  text-shadow: -1px 1px 2px rgba(0, 0, 0, 0.712);
+  transition: all 0.2s ease-in-out;
+}
+.colGreen {
+  color: #1d1d1d;
+  /* background: linear-gradient(to top right, #70f628, #36ff9a); */
+  background: linear-gradient(to top right, #08ff29, #9dff41);
+  /* transition: 0.3s; */
+}
+.colRed {
+  color: #1d1d1d;
+  /* background: linear-gradient(to top right, #ee093b, #ff5100); */
+  background: linear-gradient(to top right, #f80000, #fe8700);
+  /* transition: 0.3s; */
+}
+.answerBox {
+  font-size: 1.2em;
+  margin: 5px auto;
+  width: 250px;
+}
+.question {
+  width: 250px;
+  margin: 5px auto;
+}
+#panel {
+  display: flex;
+  margin: 10px 5px;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+footer {
+  /* height: 130px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+#btn {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  color: rgb(240, 240, 240);
+  /* color:linear-gradient(to top right, #009fff, #3958e6); */
+  border: 0px solid rgb(243, 243, 243);
+  font-size: 25px;
+  font-weight: bold;
+  font-family: "geoSansLight";
+  text-shadow: -3px 3px 4px rgba(0, 0, 0, 0.712);
+  background: linear-gradient(to top, #232526, #414345);
+  filter: drop-shadow(0px 0px 0px #ffe70e00);
+  transition: all 0.4s ease-in-out;
+}
+#btn:hover {
+  color: rgb(240, 240, 240);
+  font: bold;
+  background: linear-gradient(to top right, #1a1b1b, #414345);
+  filter: drop-shadow(0px 0px 0px #ffe70e00);
+  text-shadow: -3px 3px 6px rgba(0, 0, 0, 0.712);
+  box-shadow: 0px 0px 5px 2px rgb(166, 255, 0);
+  cursor: pointer;
+}
+#btn:active {
+  width: 97px;
+  height: 97px;
+  background: linear-gradient(to top, #232526, #414345);
+  text-shadow: -3px 3px 2px rgba(0, 0, 0, 0.712);
+}
